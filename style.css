@@ -1,0 +1,116 @@
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+ margin: 0;
+  font-family: sans-serif;
+}
+.links li{
+  list-style: none;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  padding: 20px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  text-decoration: underline;
+}
+#logout{
+  color:blue;
+  right:1%;
+  position: absolute;
+}
+
+.boxes{
+  display: flex;
+  height:50px;
+}
+span{
+  color: white;
+}
+header{
+  padding: 5vh;
+  color: black;
+  background-color:royalblue;
+  font-size:5vh;
+  animation: slideFadeIn 1s forwards;
+  letter-spacing: 2px;
+}
+p{
+  color: black
+}
+#add,input{
+  height: 40px;
+  margin-left:5px;
+  margin-top: 5px;
+  background-color: rgba(65, 105, 225, 0.84);
+  border: none;
+}
+@keyframes slideFadeIn {
+  from {
+    transform: translatex(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translatex(0);
+    opacity: 1;
+  }
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 7vh;
+  background-color: royalblue;
+}
+#removebtn{
+  background-color: grey;
+  height: 3rem;
+  width: 3rem;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+}
+#removebtn:hover{
+  background-color: red;
+}
+.tasks li{
+  width: 100%;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vh;
+  margin-bottom: 5px;
+
+}
+.tasks li:nth-child(odd) {
+  background-color:lightskyblue;
+}
+
+.tasks li:nth-child(even) {
+  background-color: lightgray;
+}
+
+.task{
+  width: 100%;
+
+}
+#email{
+  color:black;
+  text-decoration: none;
+}
+#task{
+  width:100%;
+  margin-top: 5px;
+  background-color:royalblue;
+}
+.tasks{
+  display: block;
+
+}
